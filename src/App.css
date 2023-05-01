@@ -8,14 +8,33 @@ body{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: radial-gradient(rgb(229, 251, 63) 0%, rgba(252,70,107,1) 80%);
+   
     position: relative;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+
+
+}
+
+.tasks-container{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 60vh;
+    overflow: auto;
+    margin-inline:auto ;
+}
+
+@media screen and (max-width:580px) {
+    .tasks-container{
+        width: 80%;
+    }
 }
 
 .input-container{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    
     margin-inline: auto;
     margin-top: 5%;
     justify-content: center;
@@ -25,6 +44,8 @@ body{
 
     margin-top: 0px;
     color:black;
+    width: 100%;
+    text-align: center;
 }
 
 .form-container{
@@ -52,7 +73,7 @@ body{
     font-size: 2rem;
     cursor: pointer;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.14);
-    background-color: #5D3FD3 ;
+    background-color: #9146FF;
     color: white ;
     user-select: none;
 }
@@ -75,6 +96,8 @@ body{
     overflow: auto;
 
 }
+
+
 .button-div button{
     cursor: pointer;
 }
@@ -96,7 +119,7 @@ body{
 }
 .ed-button{
     
-    background-color: rgb(215, 215, 35);
+    background-color: #ffce44;
     color: white;
     border: none;
     border-radius: 7px;
@@ -148,12 +171,3 @@ border-radius:5px 0px 0px 5px;
     opacity: 0.5;
 }
 
-.tasks-container{
-    padding: 1%;
-    display: flex;
-    flex-direction: column;
-    width: 18%;
-    height: 60vh;
-    overflow: auto;
-    margin-inline:auto ;
-}
